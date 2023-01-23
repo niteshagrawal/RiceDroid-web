@@ -446,6 +446,7 @@ body{
     color: #C0B7E8;
 }
 
+
 /* Style the search field */
 
 form.example{
@@ -494,3 +495,27 @@ form.example input[type=text]::placeholder {
     clear: both;
     display: table;
   }
+
+  
+@media (max-width:767px) {
+    .fifth-section .head{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .fifth-section .popular{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    form.example input[type=text] {
+        padding: 1rem ;
+    }
+
+    form.example input[type=text]::placeholder {
+        font-weight: 700;
+        font-size: 14px;
+        color: #8C34E8 !important;
+        margin: auto;
+    }
+}
