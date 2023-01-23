@@ -11,6 +11,16 @@ body{
     background-color: #101010;
 }
 
+.bg-dark{
+    background-color: #101010 !important;
+}
+
+.fixed-top {
+    top: -60px;
+    transform: translateY(60px);
+    transition: transform .3s;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
