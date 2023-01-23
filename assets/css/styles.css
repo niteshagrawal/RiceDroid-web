@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #fff;
+    background-color: #101010;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.navbar-toggler{
+    border: transparent !important;
+    box-shadow: none !important;
+}
+
+.toggle-icon{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+.toggle-icon:nth-last-child(2){
+    width: 30px;
+}
+
+.navbar-nav .nav-link{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+
+.btn-outline-white{
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline-white:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.main-banner{
+    background-image: url('../images/mainBanner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - 67px);
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.main-banner .container,
+.main-banner .container .row{
+    height: 100%;
+}
+
+.main-banner .main-text{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 30px;
+    color: #C0B7E8;
+}
+
+.purple{
+    color: #8C34E8 !important;
+}
+
+.main-banner .banner-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-banner .banner-icons a{
+    margin-right: 2rem;
+}
+
+
+@media (max-width:767px) {
+    .main-banner{
+        background-image: url('../images/mainBanner-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .main-banner .main-text{
+        line-height: 40px;
+    }
+
+    .main-banner .banner-icons a{
+        margin-right: 1rem;
+    }
+}
+
+.main-banner .button-area{
+    margin-top: 3rem;
+}
+
+.main-banner-button{
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    padding: 0.8rem 3rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #343045 !important;
+    text-decoration: none;
+}
+
+/* second banner Style for index */
+.second-banner{
+    background-image: url('../images/second-bannerBG.png');
+    background-position: right;
+    /* background-position: right bottom 5rem; */
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.up-down-padding{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.second-banner .intro-text{
+    font-weight: 700;
+    font-size: 48px;
+    color: #C0B7E8;
+    margin-bottom: 0;
+}
+
+.second-banner .intro-tag{
+    font-weight: 400;
+    font-size: 40px;
+    color: #8C34E8;
+}
+
+.second-banner .details-project{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #C0B7E8;
+}
+
+.second-banner .about-rice{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-banner .about-rice div{
+    margin-right: 2rem;
+}
+
+.second-banner .about-text{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    color: #C0B7E8;
+}
+
+.second-banner .about-text .about{
+    color: #8C34E8;
+    font-weight: 700;
+}
+
+.second-banner .about-desc{
+    color: #C0B7E8;
+    margin-top: 1rem;
+}
+
+.second-banner .about-rice .show-ss{
+    font-family: 'Nagoda';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.075em;
+    color: #373737;
+    text-decoration: none;
+    position: absolute;
+    top: 42.5%;
+    left: 25%;
+}
+
+.second-banner .about-rice .device-count{
+    position: absolute;
+    top: 18%;
+    right: -25%;
+    padding: 1rem;
+    width: 70%;
+}
+
+@media (max-width:767px) {
+    .second-banner{
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .up-down-padding{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .second-banner .about-rice .show-ss{
+        top: 40%;
+        left: 20%;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .second-banner .about-rice .device-count{
+        top: 10%;
+        right: -30%;
+        width: 80%;
+    }
+
+    .second-banner .intro-text{
+        font-size: 35px;
+    }
+
+    .second-banner .intro-tag{
+        font-size: 30px;
+    }
+
+    .second-banner .about-rice{
+        margin-top: 5rem;
+        flex-direction: column-reverse;
+    }
+}
+
+
+/* Third section of index css starts here */
+.third-section{
+    position: relative;
+    background-image: url('../images/third-banner.png');
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    height: 100vh;
+}
+
+.third-section .head{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    color: #C0B7E8;
+}
+
+.third-section .latest{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #C0B7E8;
+    margin-bottom: 0;
+}
+
+.third-section .changelog{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #C0B7E8;
+}
+
+.third-section .changelog-details{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 3rem;
+}
+
+.third-section .img-bg{
+    background: #1D1D1D;
+    border-radius: 30px;
+    padding: 2rem 3rem 0 3rem;
+}
+
+.third-section .img-bg .head{
+    font-weight: 700;
+    font-size: 23.8588px;
+    line-height: 29px;
+    color: #C0B7E8;
+}
+
+.third-section .img-bg .para{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #C0B7E8;
+}
+
+@media (max-width:767px) {
+
+    .third-section{
+        background-position: center center;
+        padding-top: 5rem;
+        height: 100%;
+    }
+
+    .third-section .head{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .third-section .latest{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .third-section .changelog{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .third-section .img-bg{
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .third-section .img-bg .head{
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .third-section .img-bg .para{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 10px;
+    }
+}
+
+
+/* fourth section of index - our team css starts here */
+.fourth-section{
+    position: relative;
+    background-image: url('../images/team-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 40% center;
+}
+
+.fourth-section .head{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #C0B7E8;
+}
+
+.fourth-section .sub-head{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #C0B7E8;
+}
+
+.fourth-section .name{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 102.4%;
+    letter-spacing: 0.15em;
+    color: #C0B7E8;
+    margin-bottom: 2rem;
+}
+
+.fourth-section .position{
+    background: #C0B7E8;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 102.4%;
+    letter-spacing: 0.001em;
+    color: #343045;
+    display: inline-flex;
+}
+
+@media (max-width:767px) {
+    .fourth-section .head{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .fourth-section .sub-head{
+        font-size: 1rem;
+        line-height: 29px;
+        color: #C0B7E8;
+    }
+    
+    .fourth-section .name{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0.15em;
+        color: #C0B7E8;
+        margin-bottom: 2rem;
+    }
+    
+    .fourth-section .position{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+
+
+/* last section of the index - download section of index css */
+.fifth-section{
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.fifth-section .head{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #C0B7E8;
+}
+
+.fifth-section .popular{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    color: #C0B7E8;
+}
+
+/* Style the search field */
+
+form.example{
+    position: relative;
+}
+
+form.example input[type=text] {
+    padding: 1rem 2rem;
+    background: #C0B7E8;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 60px;
+    float: left;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8C34E8 !important;
+  }
+
+form.example input[type=text]::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    color: #8C34E8 !important;
+}
+  
+  /* Style the submit button */
+  form.example button {
+    position: absolute;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #8C34E8;
+    right: 2%;
+    top: 15%;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
